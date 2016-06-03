@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<meta charset="utf-8" />-->
+    <link rel="stylesheet" type="text/css" href="sample1.css" />
+	 <script type="text/javascript" src="sample1.js"></script>
+
+<title>Window Title</title>
+</head>
+<body>
+
+	<p> This sample web page demonstrates some tags we will use in this course </p>
+	
+	<h1 id="notes">HTML Notes</h1>
+	<ul>
+		<li> The !DOCTYPE declaration must be the very first thing</li>
+		<li> The tab's title is set in the  head section!</li>
+		<li> <a href="http://www.gcsu.edu">click on hyperlink to www.gcsu.edu</a></li>
+		<li> <a href="#bookmark">click to go to bookmark section</a></li>
+	</ul>
+
+	<!-- Added a large image to make it necessary to scroll -->
+	<img src="http://www.diplom.org/Online/maps/20th-large.gif" width="100%" height="100%" >
+	
+	
+	<h1 id="bookmark" > Bookmarks</h1>
+	<p>Notice the difference between div and span sections </p>
+	<div>Apple</div>
+	<div>Banana</div>
+	<div>Carrot</div>
+	<hr> <!--horizontal rule -->
+	<span>one</span>
+	<span>two</span>
+	<span>three</span>
+	<a href="#notes">Go to HTML Notes Section</a>
+	Remember to place the # in front of the id.
+	
+	<h1 id="formdata"> Reading Input </h1>
+	<p>Notice the different keyboards that appear</p>
+	<label for="name">Name</label>
+	<input type="text" id="name" />
+	<label for="email">Email</label>
+	<input type="email" id="email" />
+	<label for="phone">Phone</label>
+	<input type="tel" id="phone" />
+	<label for="count">count</label>
+	<input type="number" id="count"/>
+	
+	<h1 id="buttons"> Buttons</h1>
+	<button id="btnOne" onclick="display(id)">Click Me</button>
+	<button id="btnTwo">Wait To Click</button>
+</body>
+</html>

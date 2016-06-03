@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    
+   <script type="text/javascript" src="cordova.js"></script>
+  
+    <!-- Add Links to JQueryMobile  These need to be placed BEFORE the Content-Security-Policy  -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>
+    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery.csv.min.js"></script>
+
+    
+    <link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+   
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title> Reading File Example</title>
+</head>
+
+<body>
+	
+<div id="homePage" data-role="page">
+	<div id="homeHeader" data-role="header">
+		<h1 id="homeTitle"> My Inventory</h1>
+	</div> <!--header -->
+	
+	<div id="homeWrapper" data-role="content">
+		<button id="btnGoToScan" onclick="gotoScan()"> Go To Scan </button>
+		<button id="btnDisplay" onclick="displayList()"> Display List </button>
+		<button id="btnExport" onclick="exportList()"> Export Items </button>
+		<button id="btnClear" onclick="clearList()"> Clear List </button>
+	</div> <!-- content-->
+	
+
+	</div> <!--page -->
+	
+	<div id="scanPage" data-role="page">
+	<div id="scanHeader" data-role="header">
+		<h1 id="scanTitle"> Scan Item</h1>
+	</div> <!--header -->
+	
+	<div id="scanrapper" data-role="content">
+		<button id="btnScan" onclick="scan()"> Go To Scan </button>
+		<label for="scanCode">Scan Code</label>
+		<input type="number" id="scanCode" />
+		
+		<button id="btnSearch" onclick="searchCode()">search Code </button>
+
+	</div> <!-- content-->
+	
+
+	</div> <!--page -->
+</body>
+
+</html>
